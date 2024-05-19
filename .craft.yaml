@@ -1,0 +1,13 @@
+---
+minVersion: 0.34.1
+github:
+  owner: getsentry
+  repo: sentry-k8s-libsonnet
+changelogPolicy: auto
+preReleaseCommand: bash ./sbin/bump-version.sh
+releaseBranchPrefix: release
+targets:
+  - name: github
+  - name: pypi
+  - name: sentry-pypi
+    internalPypiRepo: getsentry/pypi
